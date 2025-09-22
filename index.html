@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МАКСИМКА :)</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="conteiner">
+            <span class="logo">МАКСИМКА😀</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="/about.html">О сайте</a></li>
+                    <li class="btn"><a href="/contacts.html">Обратная связь</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2>Привет!</h2>
+                <h1>Это Максимка-создатель данного сайта!--></h1>
+                <p>Да-да :)</p>
+                <h3>У него есть своя страничка в ВК!</h3>
+                <h4>Подписывайся!</h4>
+                <button class="btn"><a href="https://vk.com/youtube.maks">ВК</a></button>
+            </div>
+            <img src="img/testava.jpg" alt="">
+        </div>
+        
+        <div class="container trending">
+            <a href="#" class="see-all">Смотреть всё</a>
+            <h5>Последние значимые события🥰</h5>
+            
+            <div class="games">
+                <div class="block">
+                    <img src="/img/test25.jpg" alt="">
+                    <span>Любимая систер пришла ны выпускной❤️</span>
+                </div>
+                <div class="block">
+                    <img src="/img/test25.1.jpg" alt="">
+                    <span>Вручение аттестата :)</span>
+                </div>
+                <div class="block">
+                    <img src="/img/testattestat1.jpg" alt="">
+                    <span>Аттестат(корочка)</span>
+                </div>
+                <div class="block">
+                    <img src="/img/testattestat.jpg" alt="">
+                    <span>Аттестат(приложение)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container banner">
+            <h6>9В класс, Последний звонок 2025 год❤️</h6>
+            <p>Дорогой 9В класс!</p>
+            <p>Это были лучшие 9 лет в моей жизни!</p>
+            <p>Надеюсь,что в вашей жизни всё сложится очень хорошо!😎</p>
+            <p>Счастья вам и успехов!❤️</p>
+            <img src="/img/test25.2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <h3>Спасибо за то,что уделили внимание сайту!</h3>
+            <p>Возвращайтесь ещё,мы вас ждём!</p>
+            <div class="info">
+                <h1>Информация на сайте будет меняться примерно раз в месяц и по необходимости!</h1>
+            </div>
+
+            <div class="conteiner email">
+                <h3>Оставьте пожалуйста отзыв о сайте!</h3>
+                <p>Вам не сложно,а нам приятно!</p>
+                <div class="block">
+                    <div>
+                        <h2>Ваше мнение очень важно для нас!</h2>
+                        <p>Поделитесь с нами вашим мнением,мы будем очень благодарны вам!</p>
+                    </div>
+                    <div>
+                         <input type="email" id="emailFiled" placeholder="Enter you email address">
+                         <button class="btn" onclick="checkEmail()">Continue</button>
+                    </div>
+                </div>
+                <div>
+                    <h1>2025 год ©</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks conteiner">
+            <div>
+                <span class="logo">МАКСИМКА😀</span>
+            </div>
+            <div>
+                <h4>About us</h4>
+                <ul>
+                    <li>Test1</li>
+                    <li>Test2</li>
+                    <li>Test3</li>
+                    <li>Test4</li>
+                </ul>
+            </div>
+            <div>
+                <h5>Contact us</h4>
+                <p>Test1</p>
+                <p>Number telephone</p>
+            </div>
+        </div>
+        <div class="down">
+        <hr>
+        <p>Copyright 2025 © Все права защищены.</p>  
+        </div>
+    </footer>
+
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailFiled').value;
+            if (!email.includes('@')) alert('Not found @')
+            else if (!email.includes('.')) alert('Not found .')
+            else alert('All good!');
+        }
+    </script>
+</body>
+
+</html>
